@@ -1,0 +1,13 @@
+{% extends 'bhoklayo/base.html' %}
+{% block title %}Redirecting…{% endblock %}
+{% block content %}
+<h4>Please wait… redirecting to eSewa.</h4>
+<form id="esewa" method="post" action="https://esewa.com.np/epay/main">
+  <input name="amt" type="hidden" value="{{ amount }}">
+  <input name="pid" type="hidden" value="{{ order.id }}">
+  <input name="scd" type="hidden" value="{{ merchant }}">
+  <input name="su"  type="hidden" value="{{ success }}">
+  <input name="fu"  type="hidden" value="{{ failure }}">
+</form>
+<script>document.getElementById('esewa').submit();</script>
+{% endblock %}

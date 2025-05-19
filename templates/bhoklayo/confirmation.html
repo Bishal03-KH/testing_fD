@@ -1,0 +1,9 @@
+{% extends 'bhoklayo/base.html' %}
+{% block title %}Thank You{% endblock %}
+{% block content %}
+<div class="text-center">
+  <h2>Payment Successful!</h2>
+  <p>Thank you for ordering with Bhok Layo.</p>
+  <a href="{% url 'index' %}" class="btn btn-secondary">Home</a>
+</div>
+{% endblock %}

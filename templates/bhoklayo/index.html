@@ -1,0 +1,12 @@
+{% extends 'bhoklayo/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div class="text-center">
+    <h1>Welcome to Bhok Layo</h1>
+    <p class="lead">Delicious meals delivered fast to your door.</p>
+    <a href="{% url 'menu' %}" class="btn btn-success btn-lg">Browse Menu</a>
+  </div>
+{% endblock %}
+
